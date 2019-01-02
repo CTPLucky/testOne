@@ -1,0 +1,6 @@
+framework module testOne {
+  umbrella header "testOne-umbrella.h"
+
+  export *
+  module * { export * }
+}

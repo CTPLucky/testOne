@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0588C5E1A939D56F9FB1DF1B /* Pods_testOne_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF631D1FB359A4FDEF99CC2 /* Pods_testOne_Tests.framework */; };
+		0C6865D021DC49390019B838 /* CTPsample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6865CF21DC49390019B838 /* CTPsample.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,9 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10830ED9B656968D054A9B81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0C6865CE21DC49390019B838 /* CTPsample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTPsample.h; sourceTree = "<group>"; };
+		0C6865CF21DC49390019B838 /* CTPsample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTPsample.m; sourceTree = "<group>"; };
+		10830ED9B656968D054A9B81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		134571CEA4327F78D6A7DA3F /* Pods-testOne_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testOne_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-testOne_Tests/Pods-testOne_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		220D259088A83F6C074EEAEE /* testOne.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = testOne.podspec; path = ../testOne.podspec; sourceTree = "<group>"; };
+		220D259088A83F6C074EEAEE /* testOne.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = testOne.podspec; path = ../testOne.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		417FDF785E9A803D49190BB1 /* Pods-testOne_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testOne_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testOne_Tests/Pods-testOne_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CF631D1FB359A4FDEF99CC2 /* Pods_testOne_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testOne_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* testOne_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testOne_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +68,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A11D4D961A8DFA9D0FFC3779 /* Pods-testOne_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testOne_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-testOne_Example/Pods-testOne_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E31701CD2545AB66B3FAD8E3 /* Pods-testOne_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testOne_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testOne_Example/Pods-testOne_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EF9FEAAFADB280CC0F9D1278 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EF9FEAAFADB280CC0F9D1278 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FC3A63D278039DEE4E8A001D /* Pods_testOne_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testOne_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,9 +98,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C6865CD21DC490E0019B838 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0C6865CE21DC49390019B838 /* CTPsample.h */,
+				0C6865CF21DC49390019B838 /* CTPsample.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				0C6865CD21DC490E0019B838 /* Classes */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for testOne */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -377,6 +390,7 @@
 				6003F59E195388D20070C39A /* CTPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CTPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				0C6865D021DC49390019B838 /* CTPsample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

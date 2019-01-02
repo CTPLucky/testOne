@@ -1,0 +1,22 @@
+{
+  "name": "testOne",
+  "version": "0.1.0",
+  "summary": "A short description of testOne.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/CTPLucky/testOne",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CTPLucky": "1379572983@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/CTPLucky/testOne.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "testOne/Classes/**/*"
+}
